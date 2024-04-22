@@ -1,13 +1,13 @@
 @font-face {
 	font-family: calibri;
 	font-weight: 400;
-	src: url('./font/calibri-regular.ttf');
+	src: url("./font/calibri-regular.ttf");
 }
 
 @font-face {
 	font-family: calibri;
 	font-weight: 500;
-	src: url('./font/calibri-bold.ttf');
+	src: url("./font/calibri-bold.ttf");
 }
 
 * {
@@ -37,6 +37,9 @@ h2 {
 }
 
 nav {
+	position: sticky;
+	top: 0;
+	background-color: #fff;
 	box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
 		0 8px 10px -6px rgb(0 0 0 / 0.1);
 	-webkit-box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
@@ -50,16 +53,34 @@ nav {
 		list-style: none;
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 1.5rem;
 	}
 	a {
 		height: 30px;
 		display: block;
 		text-decoration: none;
 		margin-block: 10px;
+		color: #000;
 		&:hover {
 			border-bottom: 1px solid black;
 		}
 	}
+}
+.image-container {
+	width: fit-content;
+	max-width: 80%;
+	margin: 1rem auto;
+	max-width: 100%;
+	height: 320px;
+	max-height: 480px;
+}
+.image-container img {
+	display: block;
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+	height: 100%;
 }
 
 section {
