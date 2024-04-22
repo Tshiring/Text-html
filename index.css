@@ -37,15 +37,28 @@ h2 {
 }
 
 nav {
-	max-width: 80%;
-	margin-inline: auto;
+	box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+		0 8px 10px -6px rgb(0 0 0 / 0.1);
+	-webkit-box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+		0 8px 10px -6px rgb(0 0 0 / 0.1);
+	-moz-box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+		0 8px 10px -6px rgb(0 0 0 / 0.1);
+	margin-bottom: 50px;
 	ul {
+		max-width: 80%;
+		margin-inline: auto;
 		list-style: none;
 		display: flex;
 		justify-content: space-between;
 	}
 	a {
+		height: 30px;
+		display: block;
 		text-decoration: none;
+		margin-block: 10px;
+		&:hover {
+			border-bottom: 1px solid black;
+		}
 	}
 }
 
