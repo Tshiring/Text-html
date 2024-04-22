@@ -21,6 +21,12 @@ body {
 	font-size: 11px;
 }
 
-h1 {
+h1,
+h2 {
 	font-size: 11px;
+}
+
+ul {
+	list-style: disc;
+	padding-left: 20px;
 }
